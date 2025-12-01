@@ -38,4 +38,24 @@ início
             sair do sistema
         fim-se
     fim-enquanto
+carregarDados()
+
+
+enquanto (verdadeiro) faça
+exibirMenuPrincipal()
+escolha - lerOpcao()
+
+
+se escolha == 1 então cadastrarProduto()
+se escolha == 1 então verificarId()
+se escolha == 2 então consultarEstoque()
+se escolha == 3 então registrarEntrada(Validar valor negativo)
+se escolha == 4 então registrarSaida(Validar valor negativo)
+se escolha == 5 então gerarRelatorio()
+se escolha == 6 então verificarAlertas()
+se escolha == 0 então
+salvarDados()
+sair do sistema
+fim-se
+fim-enquanto
 fim
