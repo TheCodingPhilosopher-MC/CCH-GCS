@@ -1,0 +1,3 @@
+SE (estoque_atual <= estoque_minimo) ENTAO
+    ENVIAR_ALERTA("Admin", "Produto com estoque baixo!")
+FIM_SE
