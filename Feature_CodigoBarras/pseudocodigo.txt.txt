@@ -1,4 +1,0 @@
-FUNCAO GerarCodigoBarras(produto_id):
-    codigo = CONCATENAR("789", produto_id, RANDOM(1000))
-    RETORNAR codigo
-FIM_FUNCAO
