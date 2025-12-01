@@ -1,0 +1,7 @@
+FUNCAO ExportarCSV(lista_produtos):
+    arquivo = CRIAR_ARQUIVO("relatorio.csv")
+    PARA CADA produto EM lista_produtos:
+        linha = FORMATAR_CSV(produto.id, produto.nome, produto.preco)
+        ESCREVER(arquivo, linha)
+    SALVAR(arquivo)
+FIM_FUNCAO
