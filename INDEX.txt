@@ -1,4 +1,43 @@
 início
+    carregarDados()
+
+    enquanto (verdadeiro) faça
+        exibirMenuPrincipal()
+        escolha ← lerOpcao()
+
+        se escolha == 1 então
+            cadastrarProduto()
+        fim-se
+
+        se escolha == 2 então
+            consultarEstoque()
+        fim-se
+
+        se escolha == 3 então
+            registrarEntrada()
+        fim-se
+
+        se escolha == 4 então
+            registrarSaida()
+        fim-se
+
+        se escolha == 5 então
+            se estoqueEstáVazio() então
+                exibirMensagem("Não há produtos cadastrados. Relatório não pode ser gerado.")
+            senão
+                gerarRelatorio()
+            fim-se
+        fim-se
+
+        se escolha == 6 então
+            verificarAlertas()
+        fim-se
+
+        se escolha == 0 então
+            salvarDados()
+            sair do sistema
+        fim-se
+    fim-enquanto
 carregarDados()
 
 
@@ -12,28 +51,6 @@ se escolha == 1 então verificarId()
 se escolha == 2 então consultarEstoque()
 se escolha == 3 então registrarEntrada(Validar valor negativo)
 se escolha == 4 então registrarSaida(Validar valor negativo)
-se escolha == 5 então gerarRelatorio()
-se escolha == 6 então verificarAlertas()
-se escolha == 0 então
-salvarDados()
-sair do sistema
-fim-se
-fim-enquanto
-fim
-
-início
-carregarDados()
-
-
-enquanto (verdadeiro) faça
-exibirMenuPrincipal()
-escolha - lerOpcao()
-
-
-se escolha == 1 então cadastrarProduto()
-se escolha == 2 então consultarEstoque()
-se escolha == 3 então registrarEntrada()
-se escolha == 4 então registrarSaida()
 se escolha == 5 então gerarRelatorio()
 se escolha == 6 então verificarAlertas()
 se escolha == 0 então
